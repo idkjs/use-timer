@@ -1,0 +1,23 @@
+{
+  "name": "@idkjs/use-timer",
+  "version": "0.1.0",
+  "sources": [
+    {
+      "dir": "src"
+    }
+  ],
+  "bs-dependencies": [
+    "@rescript/react"
+  ],
+  "bs-dev-dependencies": [
+    "rescript-test"
+  ],
+  "package-specs": [
+    {
+      "module": "es6",
+      "suffix": ".mjs",
+      "in-source": true
+    }
+  ],
+  "generate-merlin": true
+}

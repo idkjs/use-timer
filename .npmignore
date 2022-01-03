@@ -1,0 +1,5 @@
+.vscode
+scripts
+!lib
+src/tests
+!src/**/*.mjs

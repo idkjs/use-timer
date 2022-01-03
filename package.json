@@ -1,0 +1,44 @@
+{
+  "name": "@idkjs/use-timer",
+  "description": "A tiny state manager writter in Rescript",
+  "version": "0.3.0",
+  "types": "./src/UseTimerHook.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "import": "./src/UseTimerHook.mjs"
+    },
+    "./src": {
+      "import": "./src/*.mjs"
+    },
+    "./src/UseTimerHook.mjs": {
+      "import": "./src/UseTimerHook.mjs"
+    }
+  },
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "@rescript/react": "^0.10.3",
+    "react": "^17.0.2",
+    "rescript": "^9.1.4"
+  },
+  "scripts": {
+    "build": "npm run clean && rescript build -with-deps",
+    "clean": "rescript clean && gentype -clean",
+    "deploy": "npm run build && cd lib && npm run publish",
+    "start": "rescript build -w",
+    "test": "rescript build -with-deps && retest src/tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "gentype": "^4.1.0",
+    "rescript-test": "^3.1.0"
+  },
+  "keywords": [
+    "rescript",
+    "state manager",
+    "state",
+    "react"
+  ]
+}
