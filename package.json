@@ -8,14 +8,13 @@
   },
   "exports": {
     ".": {
-      "import": "./src/UseTimerHook.bs.js"
+      "import": "./src/UseTimerHook.mjs",
+      "require": "./src/UseTimerHook.bs.js",
+      "types": "./src/UseTimerHook.d.ts",
+      "source": "./src/UseTimerHook.ts"
     },
-    "./src": {
-      "import": "./src/*.bs.js"
-    },
-    "./src/UseTimerHook.bs.js": {
-      "import": "./src/UseTimerHook.bs.js"
-    }
+    "./package.json": "./package.json",
+    "./": "./"
   },
   "type": "module",
   "license": "MIT",
