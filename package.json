@@ -8,13 +8,13 @@
   },
   "exports": {
     ".": {
-      "import": "./src/UseTimerHook.mjs"
+      "import": "./src/UseTimerHook.bs.js"
     },
     "./src": {
-      "import": "./src/*.mjs"
+      "import": "./src/*.bs.js"
     },
-    "./src/UseTimerHook.mjs": {
-      "import": "./src/UseTimerHook.mjs"
+    "./src/UseTimerHook.bs.js": {
+      "import": "./src/UseTimerHook.bs.js"
     }
   },
   "type": "module",

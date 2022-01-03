@@ -15,7 +15,7 @@
   "package-specs": [
     {
       "module": "es6",
-      "suffix": ".mjs",
+      "suffix": ".bs.js",
       "in-source": true
     }
   ],
